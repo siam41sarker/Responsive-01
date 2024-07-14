@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:10px;
+        }
+        .food{
+            border:2px solid aquamarine;
+            padding:10px;
+            border-radius: 10px;
+        }
+        .food img{
+            width:100%;
+        }
+        /*For small device..*/
+        @media screen and (max-width:576px)
+            {
+                .container{
+                    grid-template-columns: repeat(1,1fr);
+                }
+                .food{
+                    border:1px solid tomato;
+                }
+            }
+        /* For medium Device.. */
+        @media screen and (min-width:576px) and (max-width:972px)
+            {
+                .container{
+                    grid-template-columns: repeat(2,1fr);
+                }
+                .food{
+                    border:1px solid blueviolet;
+                }
+            }
+
+    </style>
+    <title>Responsive-01</title>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="images.jpg" alt="">
+            <p>Food Item-1</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ducimus cupiditate nam eveniet atque explicabo optio minus voluptatibus consequatur eligendi?</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images.jpg" alt="">
+            <p>Food Item-2</p>
+            <p>Deleniti architecto nostrum quae modi reprehenderit quod molestiae recusandae rem libero? Asperiores, delectus? Adipisci est maiores illo illum fugiat non!</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images.jpg" alt="">
+            <p>Food Item-3</p>
+            <p>Corporis tempora placeat ducimus nisi omnis alias commodi animi necessitatibus itaque, eius voluptates voluptatibus pariatur obcaecati consequatur totam enim maxime.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images.jpg" alt="">
+            <p>Food Item-4</p>
+            <p>Optio libero porro quisquam consequuntur velit sequi id! Atque sapiente reiciendis quidem esse hic suscipit reprehenderit, delectus harum minus eaque?</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images.jpg" alt="">
+            <p>Food Item-5</p>
+            <p>Architecto, iusto. Ad ducimus rerum incidunt nemo asperiores aliquid laudantium eveniet voluptate cupiditate, temporibus placeat quas quisquam delectus accusantium at.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images.jpg" alt="">
+            <p>Food Item-6</p>
+            <p>Velit nemo repellat nesciunt in magnam ex quidem corrupti, consectetur voluptatem minus voluptatibus impedit vitae cumque fugit maxime nam id.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images.jpg" alt="">
+            <p>Food Item-7</p>
+            <p>Consectetur officiis mollitia tempore pariatur sunt assumenda, iste ullam vitae, harum dolorem velit consequuntur, nisi perferendis! Magnam officia quae quis.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images.jpg" alt="">
+            <p>Food Item-8</p>
+            <p>Excepturi, unde fuga. Asperiores quis possimus quo, sint doloribus perspiciatis illo nam vero quidem facere pariatur expedita nisi tenetur magni.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
